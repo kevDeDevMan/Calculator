@@ -7,4 +7,4 @@ public class Calculator extends Calculate {
         equation.calculate();
         equation.continueMath();
     }
-            }
+}

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculate {
 
-    public int calculate(){
+    public int calculate() {
         Scanner readInput = new Scanner(System.in);
         System.out.println("Enter what operation you want to do:");
         String operator = readInput.next();
@@ -41,13 +41,12 @@ public class Calculate {
         return -1;
     }
 
-    public boolean continueMath(){
-        Scanner continueMath = new Scanner(System.in);
-        boolean loopMath = continueMath.nextBoolean();
-        do {
+    public void continueMath() {
+        Scanner readContinue = new Scanner(System.in);
+        System.out.println("Do you want to continue? true or false");
+        boolean keepGoing = readContinue.nextBoolean();
+        if (keepGoing == true){
             calculate();
-        } while (loopMath == true);
-        return false;
+        }
     }
-
 }
